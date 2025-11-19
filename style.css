@@ -1,0 +1,29 @@
+h1 {
+  /* html tag selector */
+  font-size: 60px;
+}
+
+#header-1 /* id selector */ {
+  color: green;
+  /* color: green !important; */
+}
+
+.headers /* class selector */ {
+  border: 1px solid green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container #header-1 /* id selector */ {
+  color: lightblue;
+}
+
+#header-1 /* id selector */ {
+  color: purple;
+}
+
+/* h1 {
+  color: yellowgreen;
+  text-align: center;
+}
+ */
