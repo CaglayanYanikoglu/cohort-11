@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display </title>
+
+  <style>
+    .text {
+      color: blue;
+      font-size: 40px;
+      display: inline;
+      width: 300px;
+      height: 300px;
+      margin-top: 100px;
+    }
+
+    .btn {
+      color: white;
+      background-color: #2332c3;
+      border-radius: 4px;
+      border: none;
+      padding: 6px 12px;
+      font-size: 20px;
+      /* width: 300px;
+      height: 300px; */
+      display: inline-block;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  Display block:
+  - Tüm satırı kaplar
+  - tüm satırı kapladığı için yanyana gelemez.
+
+  Display inline & inline-block
+  - Sadece boyutu kadar alan kaplar
+  - yan yana başka elementlerle gelebilir -->
+
+  <!--   <h1>Display</h1>
+  <span class="text">Patika</span>
+  <button class="btn">Click me</button> -->
+  <!--     <style>
+    .container {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="sub-container">
+      <p>Patika.dev</p>
+    </div>
+    <div>
+      Hello
+    </div>
+  </div> -->
+
+  <!--   <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .container div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #333;
+      box-sizing: border-box;
+    }
+
+    p {
+      height: 600px;
+      background-color: orange;
+    }
+  </style> -->
+
+  <!--   <div class="container">
+    <p>P element</p>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+    <div>
+      test
+    </div>
+  </div> -->
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .header-container {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    .header-left {
+      /* background-color: #666; */
+      flex: 1;
+      order: 2;
+    }
+
+    .header-left svg {
+      color: white;
+      width: 60px;
+      height: 60px;
+    }
+
+    .header-right {
+      color: white;
+      background-color: #333;
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 6px;
+    }
+
+   /*  .header-right svg:not(:last-child) {
+      margin-right: 6px;
+    } */
+  </style>
+
+  <div class="header-container">
+    <div class="header-left">
+      <svg aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
+        height="24px" fill="none">
+        <path fill="currentColor" fill-rule="evenodd"
+          d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </div>
+    <div class="header-right">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+        <path stroke="currentColor" stroke-width="1.5"
+          d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853">
+        </path>
+      </svg>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+        <path stroke="currentColor" stroke-width="1.5"
+          d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3M12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z">
+        </path>
+      </svg>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+        <path stroke="currentColor" stroke-width="1.5"
+          d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3M12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z">
+        </path>
+      </svg>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+        <path stroke="currentColor" stroke-width="1.5"
+          d="M3.75 21v-3a3.75 3.75 0 013.75-3.75h9A3.75 3.75 0 0120.25 18v3M12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+</body>
+
+</html>
